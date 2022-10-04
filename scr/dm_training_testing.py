@@ -32,7 +32,7 @@ if __name__ == '__main__':
   parser.add_argument('-val','--val',help='val_data lemmas, definitions, and their examples',required=True)
   parser.add_argument('-test','--test',help='test_data lemmas, definitions, and their examples',required=True)
   parser.add_argument('-o','--output_path',help='Path to save results',required=True)
-  parser.add_argument('-p','--prompt_type',help='Prompt to use', choices = ['in','for','lemma:', 'target'], required=True)
+  parser.add_argument('-p','--prompt_type',help='Prompt to use', choices = ['lemma:', 'target'], required=True)
 
   # Parse the argument
   args = parser.parse_args()
@@ -101,9 +101,6 @@ if __name__ == '__main__':
       args=model_args,
       use_cuda=True
   )
-
-  # Configure Validation
-  # Use train_test_split to split our data into train and validation sets for training
 
   # Num steps in epoch = num training samples / batch size
   steps_per_epoch = int(np.ceil(len(df_train) / float(model.args.train_batch_size)))
