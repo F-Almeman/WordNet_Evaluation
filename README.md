@@ -17,7 +17,7 @@ python3 src/dm_training_testing.py -train PATH_TO_TRAINING_FILE -val PATH_TO_VAL
 [**Intrinsic evaluation**](https://colab.research.google.com/drive/18kXRLXlEm-2uku5Imw0jzttqw5O2n7c6?usp=sharing): this Google colab notebook evaluates the definition model interinisically using BLEU, METEOR, ROUGE, and BERTScore. It takes the output file from [dm_training_testing.py](src/dm_training_testing.py) to evaluate the generated definitions.</br>
 
 
-[**Calculate GDEX**](https://colab.research.google.com/drive/1qK8wriSzi6gGxjwYa3tHjpXJhsES9QIE?usp=sharing): this Google colab notebook calculates the scores of GDEX factors for a given dataset examples. Pronouns and frequent words lists that are used in this notebook are available in [GDEX_files](datasets/GDEX_files).
+[**Calculate GDEX**](https://colab.research.google.com/drive/1qK8wriSzi6gGxjwYa3tHjpXJhsES9QIE?usp=sharing): this Google colab notebook calculates the scores of GDEX factors for given dataset examples. Pronouns and frequent words lists that are used in this notebook are available in [GDEX_files](datasets/GDEX_files).
 
 
 
