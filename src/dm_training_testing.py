@@ -93,7 +93,7 @@ if __name__ == '__main__':
   model_args.learning_rate = 4e-6
   
   if args.prompt_type == 'target':
-    model_args.special_tokens = [r"<target>", r"<\target>"]
+    model_args.special_tokens = [r"<target>", r"</target>"]
 
   model = Seq2SeqModel(
       encoder_decoder_type="bart",
