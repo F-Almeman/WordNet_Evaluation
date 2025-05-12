@@ -1,5 +1,5 @@
 # WordNet_in_DM
-This repository is created for the work [Putting WordNet’s Dictionary Examples in the Context of Definition Modelling: An Empirical Analysis](https://aclanthology.org/2022.cogalex-1.6/) that is submitted to CogALex 2022.</br>
+This repository is created for the work [Putting WordNet’s Dictionary Examples in the Context of Definition Modelling: An Empirical Analysis](https://aclanthology.org/2022.cogalex-1.6/) that is submitted to CogALex 2022, and its extention [WordNet under Scrutiny: Dictionary Examples in the Era of Large Language Models](https://aclanthology.org/2024.lrec-main.1538/)</br>
 
 ## Datasets
 
