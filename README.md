@@ -9,16 +9,16 @@ This repository was created for the work [Putting WordNet’s Dictionary Example
 
 ## Intrinsic evaluation
 
-# Automatic evaluation
+### Automatic evaluation
 [**Calculate GDEX**](https://colab.research.google.com/drive/1qK8wriSzi6gGxjwYa3tHjpXJhsES9QIE?usp=sharing): this Google colab notebook calculates the scores of GDEX factors for given dataset examples. Pronouns and frequent words lists that are used in this notebook are available in [GDEX_files](datasets/GDEX_files).
 
-# Human evaluation 
+### Human evaluation 
 The questionnaire dataset is available at [examples_evaluation.pdf]()
 
 
 ## Extrinsic evaluation
 
-# WN_in_DM
+### WN_in_DM
 [**dm_training_testing.py**](src/dm_training_testing.py): to train a definition generation model using BART as Seq2Seq model. It takes 3 input files (training, validation, and testing files) and the prompt type or encoding method which are ['lemma:' or 'target']. 'lemma:' means without using any special tokens to identify the target lemma in the context while 'target' uses special tokens \<target> and \</target> around the target lemma. 
 
 ```
@@ -27,7 +27,7 @@ python3 src/dm_training_testing.py -train PATH_TO_TRAINING_FILE -val PATH_TO_VAL
 
 [**Intrinsic evaluation**](https://colab.research.google.com/drive/18kXRLXlEm-2uku5Imw0jzttqw5O2n7c6?usp=sharing): this Google colab notebook evaluates the definition model interinisically using BLEU, METEOR, ROUGE, and BERTScore. It takes the output file from [dm_training_testing.py](src/dm_training_testing.py) to evaluate the generated definitions.</br>
 
-# WN_in_Word Similarity
+### WN_in_Word Similarity
 [**word_similarity.py**](src/word_similarity.py): For this experiment, we use the examples to generate word embeddings, using MirrorWiC, a state-of-the-art model for learning high-quality representations of words or phrases in context. The idea behind this experiment is that informative examples should lead to higher-quality embeddings. To evaluate the quality of the word embeddings, we rely on a number of standard word similarity benchmarks, namely SimLex-999, SimVerb-3500, Stanford's Contextual Word Similarities (SCWS), and MEN Test Collection. The output file is availabe at [results_similarity_experiment.csv](https://docs.google.com/spreadsheets/d/1oWCS2mkw4Fe59XYv1lR1_SIu_LKbEWx6Z1X6B-fRCUA/edit?usp=sharing)
 
 
