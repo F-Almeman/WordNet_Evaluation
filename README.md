@@ -28,11 +28,11 @@ python3 src/dm_training_testing.py -train PATH_TO_TRAINING_FILE -val PATH_TO_VAL
 [**Intrinsic evaluation**](https://colab.research.google.com/drive/18kXRLXlEm-2uku5Imw0jzttqw5O2n7c6?usp=sharing): this Google colab notebook evaluates the definition model interinisically using BLEU, METEOR, ROUGE, and BERTScore. It takes the output file from [dm_training_testing.py](src/dm_training_testing.py) to evaluate the generated definitions.</br>
 
 # WN_in_Word Similarity
-[**word_similarity.py**](src/word_similarity.py): For this experiment, we use the examples to generate word embeddings, using MirrorWiC, a state-of-the-art model for learning high-quality representations of words or phrases in context. The idea behind this experiment is that informative examples should lead to higher-quality embeddings. To evaluate the quality of the word embeddings, we rely on a number of standard word similarity benchmarks, namely SimLex-999, SimVerb-3500, Stanford's Contextual Word Similarities (SCWS), and MEN Test Collection.
+[**word_similarity.py**](src/word_similarity.py): For this experiment, we use the examples to generate word embeddings, using MirrorWiC, a state-of-the-art model for learning high-quality representations of words or phrases in context. The idea behind this experiment is that informative examples should lead to higher-quality embeddings. To evaluate the quality of the word embeddings, we rely on a number of standard word similarity benchmarks, namely SimLex-999, SimVerb-3500, Stanford's Contextual Word Similarities (SCWS), and MEN Test Collection. The output file is availabe at [results_similarity_experiment.csv](https://docs.google.com/spreadsheets/d/1oWCS2mkw4Fe59XYv1lR1_SIu_LKbEWx6Z1X6B-fRCUA/edit?usp=sharing)
 
 
 ```
-python3 src/src/word_similarity.py --input_words wn_cha_common.csv --input_gpt sim_examples_gpt_simple_and_gdex.csv --similarity_file similarity_datasets.csv
+python3 src/src/word_similarity.py --input_words datasets/wn_cha_common.csv --input_gpt datasets/sim_examples_gpt_simple_and_gdex.csv --similarity_file datasets/similarity_datasets.csv
 ```
 
 
