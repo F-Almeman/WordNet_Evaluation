@@ -13,7 +13,7 @@ This repository was created for the work [Putting WordNet’s Dictionary Example
 [**Calculate GDEX**](https://colab.research.google.com/drive/1qK8wriSzi6gGxjwYa3tHjpXJhsES9QIE?usp=sharing): this Google colab notebook calculates the scores of GDEX factors for given dataset examples. Pronouns and frequent words lists that are used in this notebook are available in [GDEX_files](datasets/GDEX_files).
 
 ### Human evaluation 
-The questionnaire dataset is available at [examples_evaluation.pdf]()
+The questionnaire dataset is available at [examples_evaluation.pdf](https://github.com/F-Almeman/examples_evaluation_questionnaire)
 
 
 ## Extrinsic evaluation
